@@ -1,0 +1,13 @@
+{%extends "index.html"%}
+{%load static%}
+{%block formularios%}
+
+    <h2>Lista de terror</h2>
+    <ul>
+        {%for pelicula in lista_de_terror%}
+        <li>{{pelicula.titulo}}</li>
+        {% endfor %}
+    </ul>
+    
+
+{%endblock%}
